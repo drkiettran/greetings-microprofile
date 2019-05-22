@@ -29,7 +29,7 @@ public class HelloWorldEndpoint {
 	@PUT
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	@Path("/update/{year}/{month}/{day}")
+	@Path("/{year}/{month}/{day}")
 	public Response doPutDate(@PathParam("year") int year, @PathParam("month") int month, @PathParam("day") int day,
 			Message inMessage) throws UnknownHostException {
 		System.out.println("inMessage: " + inMessage.getName() + ":" + inMessage.getMessage());
