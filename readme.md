@@ -30,7 +30,7 @@ Connection: keep-alive
 cache-control: no-cache
 
 ```
-
+curl: `curl -X GET http://localhost:8080/greetings/2019/09/11 -H "Content-type:application/json"`
 
 ### Response:
 
@@ -67,6 +67,9 @@ cache-control: no-cache
 }
 
 ```
+
+curl: `curl -X PUT http://localhost:8080/greetings/2019/09/11 -H "Content-type:application/json" -d '{"name": "Kiet T. Tran", "message": "2019/09/11"}'`
+
 
 ### Response:
 
